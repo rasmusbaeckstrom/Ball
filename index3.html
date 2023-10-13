@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #ball {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: red;
+        transition: margin-left 2s;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation: 2st left-right-left;
+      }
+
+      #container {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+      #container:hover #ball {
+        margin-left: 180px;
+      }
+
+      @keyframes left-right-left {
+        from {
+          margin-left: 0;
+        }
+        to {
+          margin-left: 180px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="ball"></div>
+    </div>
+    <div id="container">
+      <div id="ball"></div>
+    </div>
+  </body>
+</html>

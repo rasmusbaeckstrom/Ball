@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #ball {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+
+        animation-name: color-shift;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes color-shift {
+        0% {
+          background-color: red;
+          border-radius: 50px;
+        }
+        33% {
+          background-color: green;
+          border-radius: 20px;
+        }
+        67% {
+          background-color: pink;
+        }
+        100% {
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ball"></div>
+  </body>
+</html>
